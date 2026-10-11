@@ -4,85 +4,1085 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZQNFOX BE PRIVATE LIMITED</title>
-  <meta name="description" content="ZQNFOX BE PRIVATE LIMITED is a technology company focused on building practical digital solutions.">
+
+  <title>ZQNFOX BE PRIVATE LIMITED | Technology & Innovation</title>
+
+  <meta name="description" content="Official website of ZQNFOX BE PRIVATE LIMITED, an Indian technology company focused on thoughtful digital solutions, software development and innovation.">
+
+  <meta name="theme-color" content="#101a32">
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; color: #172033; line-height: 1.7; }
-    header { padding: 22px 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
-    .logo { font-size: 24px; font-weight: 800; letter-spacing: 1px; }
-    .logo span { color: #3567e8; }
-    nav a { margin-left: 22px; color: #172033; text-decoration: none; font-size: 14px; }
-    .hero { background: #f3f6fc; padding: 100px 8%; }
-    .hero small { color: #3567e8; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
-    h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.12; max-width: 800px; margin: 20px 0; }
-    .hero p { max-width: 650px; color: #596579; font-size: 18px; }
-    .button { display: inline-block; background: #2457db; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; margin-top: 28px; }
-    section { padding: 70px 8%; }
-    h2 { font-size: 32px; margin-bottom: 18px; }
-    .intro { max-width: 760px; color: #596579; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 22px; margin-top: 30px; }
-    .card { border: 1px solid #e4e8f0; padding: 25px; border-radius: 10px; }
-    .card h3 { margin-bottom: 10px; }
-    .card p { color: #596579; }
-    .contact { background: #f3f6fc; }
-    footer { background: #111a2d; color: white; padding: 28px 8%; font-size: 14px; }
-    footer p { color: #c3cada; }
-    @media(max-width:600px) { header { align-items: flex-start; gap: 12px; flex-direction: column; } nav a { margin: 0 14px 0 0; } .hero { padding-top: 65px; padding-bottom: 65px; } }
+    :root {
+      --navy: #101a32;
+      --blue: #315cf5;
+      --blue-dark: #2448d8;
+      --text: #202a3d;
+      --muted: #667085;
+      --light: #f4f6fb;
+      --white: #ffffff;
+      --border: #e5e9f2;
+      --radius: 18px;
+      --shadow: 0 12px 36px rgba(16, 26, 50, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #7894ff;
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(1120px, 88%);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: var(--navy);
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 900;
+      letter-spacing: -1px;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #344054;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-links .nav-contact {
+      background: var(--blue);
+      color: white;
+      padding: 10px 17px;
+      border-radius: 8px;
+    }
+
+    .nav-links .nav-contact:hover {
+      background: var(--blue-dark);
+      color: white;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: var(--navy);
+      font-size: 21px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 90% 15%, rgba(49, 92, 245, 0.09), transparent 35%),
+        linear-gradient(135deg, #f7f9ff 0%, #edf2ff 100%);
+      padding: 110px 0 105px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      margin-bottom: 21px;
+    }
+
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(42px, 6.3vw, 72px);
+      letter-spacing: -2.8px;
+      line-height: 1.08;
+      max-width: 790px;
+      margin-bottom: 27px;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero-copy {
+      max-width: 690px;
+      color: #58657b;
+      font-size: 18px;
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+
+    .tagline {
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      margin: 24px 0 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 9px;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .button:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      color: var(--navy);
+      background: white;
+      border: 1px solid var(--border);
+      margin-left: 10px;
+    }
+
+    .button-secondary:hover {
+      color: white;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 36px;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 43px);
+      letter-spacing: -1.2px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p,
+    .body-copy {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .about-note {
+      background: var(--navy);
+      color: white;
+      padding: 34px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .about-note .note-label {
+      color: #a9bcff;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .about-note p {
+      font-size: 23px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .focus-section {
+      background: var(--light);
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .focus-card {
+      background: white;
+      padding: 30px 26px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .focus-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .focus-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #edf1ff;
+      color: var(--blue);
+      font-weight: 900;
+      margin-bottom: 22px;
+    }
+
+    .focus-card h3 {
+      color: var(--navy);
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .focus-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 38px;
+    }
+
+    .principle {
+      border-top: 2px solid var(--blue);
+      padding-top: 19px;
+    }
+
+    .principle h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .principle p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-section {
+      background: var(--navy);
+      color: white;
+    }
+
+    .contact-section h2 {
+      color: white;
+    }
+
+    .contact-section .section-heading p {
+      color: #c3cce0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 30px;
+      margin-top: 35px;
+    }
+
+    .contact-card {
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.045);
+      border-radius: var(--radius);
+      padding: 30px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card h3 {
+      color: white;
+      font-size: 19px;
+      margin-bottom: 16px;
+    }
+
+    .contact-card p,
+    .contact-card address {
+      color: #d0d7e7;
+      font-size: 14px;
+      font-style: normal;
+    }
+
+    .contact-card a {
+      color: #b9c9ff;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-label {
+      color: #9eafff !important;
+      font-weight: 800;
+      font-size: 11px !important;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin: 20px 0 6px;
+    }
+
+    .cin {
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .legal-section {
+      background: #fafbfe;
+    }
+
+    .legal-section details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 14px;
+      padding: 19px 22px;
+    }
+
+    .legal-section summary {
+      color: var(--navy);
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .legal-content {
+      padding-top: 17px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .legal-content h3 {
+      color: var(--navy);
+      font-size: 15px;
+      margin: 17px 0 5px;
+    }
+
+    .legal-content p {
+      margin-bottom: 12px;
+    }
+
+    .legal-content ul {
+      padding-left: 21px;
+      margin: 8px 0 14px;
+    }
+
+    .legal-notice {
+      background: #fff8e8;
+      border: 1px solid #f2dfae;
+      color: #735a1b;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13px;
+      margin-top: 22px;
+    }
+
+    .site-footer {
+      background: #0a1123;
+      color: #c6cee0;
+      padding: 36px 0 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+      padding-bottom: 25px;
+    }
+
+    .footer-brand .logo {
+      color: white;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      max-width: 370px;
+      color: #aab4cb;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 19px;
+    }
+
+    .footer-links a {
+      color: #d7deed;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .footer-legal {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 19px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: #aab4cb;
+      font-size: 12px;
+    }
+
+    .footer-legal strong {
+      color: #e5eaf5;
+    }
+
+    .footer-address {
+      margin-top: 9px;
+      max-width: 760px;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        padding: 82px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      section {
+        padding: 66px 0;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .focus-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .principles {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+
+      .nav {
+        min-height: 70px;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        font-size: 24px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0 0 15px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 12px 4px;
+        margin: 0;
+      }
+
+      .nav-links .nav-contact {
+        text-align: center;
+        margin-top: 7px;
+      }
+
+      .hero {
+        padding: 67px 0 72px;
+      }
+
+      .hero h1 {
+        font-size: clamp(39px, 11vw, 53px);
+      }
+
+      .hero-copy {
+        font-size: 16px;
+      }
+
+      .button {
+        width: 100%;
+        margin: 8px 0 0;
+      }
+
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-note,
+      .contact-card {
+        padding: 24px;
+      }
+
+      .about-note p {
+        font-size: 20px;
+      }
+
+      .footer-links {
+        gap: 13px 18px;
+      }
+
+      .footer-legal {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo">ZQN<span>FOX</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Our Focus</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="ZQNFOX home">
+        ZQN<span>FOX</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >☰</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About Us</a>
+        <a href="#focus">Our Focus</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-contact" href="mailto:zqnfoxbeprivatelimited@gmail.com">
+          Get in Touch
+        </a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="hero">
-      <small>Technology · Ideas · Innovation</small>
-      <h1>Building useful technology for a changing world.</h1>
-      <p>ZQNFOX BE PRIVATE LIMITED is an Indian technology company working to develop practical digital solutions for everyday challenges.</p>
-      <a class="button" href="#about">Discover Our Company</a>
-    </div>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">Technology · Ideas · Innovation</p>
 
-    <section id="about">
-      <h2>About ZQNFOX</h2>
-      <p class="intro">We believe technology should serve a meaningful purpose. Our company focuses on exploring ideas, developing digital products and creating solutions that respond to changing user needs. We are at an early stage of our journey and are committed to learning, building and improving.</p>
+        <h1>
+          Building useful technology for a
+          <span>changing world.</span>
+        </h1>
+
+        <p class="hero-copy">
+          ZQNFOX BE PRIVATE LIMITED is an Indian technology company
+          exploring practical digital solutions, software development
+          and innovation to address modern challenges.
+        </p>
+
+        <p class="tagline">INNOVATE. BUILD. ELEVATE.</p>
+
+        <a class="button" href="#about">Discover Our Company</a>
+        <a class="button button-secondary" href="#contact">Contact Us</a>
+      </div>
     </section>
 
-    <section id="work">
-      <h2>What We Focus On</h2>
-      <p class="intro">Our work is centred on practical technology and responsible digital experiences.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>Digital Solutions</h3>
-          <p>Exploring software and digital tools designed to address real-world needs.</p>
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Who We Are</p>
+          <h2>About ZQNFOX</h2>
+          <p>
+            Building a better relationship between people and technology.
+          </p>
         </div>
-        <div class="card">
-          <h3>Product Development</h3>
-          <p>Turning ideas into useful products through continuous development and improvement.</p>
-        </div>
-        <div class="card">
-          <h3>Responsible Technology</h3>
-          <p>Working towards technology experiences that support more purposeful digital use.</p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              At ZQNFOX, we believe technology should make life simpler,
+              smarter, and more meaningful. Our mission is to build
+              innovative digital solutions that create a better
+              relationship between people and technology.
+            </p>
+
+            <p>
+              In an increasingly connected world, technology influences
+              how we live, work, learn, and communicate. We aim to develop
+              thoughtful, reliable, and user-centric solutions that
+              address modern challenges and make digital experiences
+              more productive, accessible, and efficient.
+            </p>
+
+            <p>
+              We are focused on exploring new possibilities in software,
+              digital services, and emerging technologies to create
+              solutions intended to deliver value to individuals,
+              businesses, and communities.
+            </p>
+
+            <p>
+              At ZQNFOX, innovation is not just about building technology;
+              it is about building technology that works for people.
+            </p>
+          </div>
+
+          <aside class="about-note">
+            <p class="note-label">Our Philosophy</p>
+            <p>
+              Technology should serve people, solve meaningful problems,
+              and make everyday digital experiences better.
+            </p>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Get in Touch</h2>
-      <p class="intro">For company-related enquiries, please contact us by email.</p>
-      <a class="button" href="mailto:contact@zqnfox.com">Contact Our Team</a>
+    <section class="focus-section" id="focus">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What We Focus On</p>
+          <h2>Ideas into useful solutions.</h2>
+          <p>
+            We are interested in developing practical technology with
+            a focus on usefulness, usability and thoughtful design.
+          </p>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <div class="focus-number" aria-hidden="true">01</div>
+            <h3>Technology Development</h3>
+            <p>
+              Exploring technology-driven approaches to everyday
+              challenges through practical development and experimentation.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-number" aria-hidden="true">02</div>
+            <h3>Digital Solutions</h3>
+            <p>
+              Working towards digital experiences that are clear,
+              accessible and designed around real user needs.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-number" aria-hidden="true">03</div>
+            <h3>Software Innovation</h3>
+            <p>
+              Exploring software concepts and emerging technologies
+              with an emphasis on practical applications.
+            </p>
+          </article>
+        </div>
+
+        <div class="principles">
+          <div class="principle">
+            <h3>People First</h3>
+            <p>Technology should be designed around people's needs.</p>
+          </div>
+
+          <div class="principle">
+            <h3>Purposeful Innovation</h3>
+            <p>Ideas should be guided by usefulness and clear purpose.</p>
+          </div>
+
+          <div class="principle">
+            <h3>Continuous Learning</h3>
+            <p>Progress comes from thoughtful experimentation and improvement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Contact Us</p>
+          <h2>Let's start a conversation.</h2>
+          <p>
+            For general business enquiries or communication with
+            ZQNFOX BE PRIVATE LIMITED, please use our official email.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Get in Touch</h3>
+
+            <p class="contact-label">Official Email</p>
+            <p>
+              <a href="mailto:zqnfoxbeprivatelimited@gmail.com">
+                zqnfoxbeprivatelimited@gmail.com
+              </a>
+            </p>
+
+            <p class="contact-label">Company Name</p>
+            <p>ZQNFOX BE PRIVATE LIMITED</p>
+
+            <p class="contact-label">Corporate Identification Number</p>
+            <p class="cin">U62013UP2026PTC250723</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Registered Office</h3>
+
+            <address>
+              11, 1 Bela, Ledwa, Maharajganj,<br>
+              Belaharriya, Farenda,<br>
+              Maharajganj – 273157,<br>
+              Uttar Pradesh, India.
+            </address>
+
+            <p class="contact-label">Business Enquiries</p>
+            <p>
+              Email is our listed contact channel. Please include
+              the purpose of your enquiry in your message.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="legal-section" id="legal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Legal Information</p>
+          <h2>Policies and terms.</h2>
+          <p>
+            Information about website use and the handling of enquiries.
+          </p>
+        </div>
+
+        <details id="privacy">
+          <summary>Privacy Policy</summary>
+          <div class="legal-content">
+            <p><strong>Last updated:</strong> 11 October 2026</p>
+
+            <h3>1. Introduction</h3>
+            <p>
+              This Privacy Policy explains how this website operated
+              by ZQNFOX BE PRIVATE LIMITED approaches information
+              associated with visitors and enquiries.
+            </p>
+
+            <h3>2. Information You Choose to Share</h3>
+            <p>
+              This website provides an email link for communication.
+              If you contact the company by email, the information
+              you include in your message and your email address may
+              be processed to respond to your enquiry and maintain
+              relevant business correspondence.
+            </p>
+
+            <h3>3. Website Data</h3>
+            <p>
+              This website does not currently provide a contact form
+              or user account registration. The hosting provider or
+              other infrastructure providers may process technical
+              information, such as server logs, as part of delivering
+              and securing the website. Their own policies may apply.
+            </p>
+
+            <h3>4. Cookies and Third-Party Services</h3>
+            <p>
+              This website is not intentionally configured with
+              advertising or analytics scripts in this version.
+              The hosting infrastructure, browser or linked email
+              service may operate independently. Their practices
+              are governed by their applicable policies.
+            </p>
+
+            <h3>5. Use and Retention</h3>
+            <p>
+              Information voluntarily sent to the company may be used
+              to respond to the sender and handle the related enquiry.
+              It should be retained only for as long as reasonably
+              necessary for the relevant purpose or applicable
+              legal requirements.
+            </p>
+
+            <h3>6. Information Security</h3>
+            <p>
+              Reasonable precautions should be taken to protect
+              business correspondence. However, no method of
+              transmission or electronic storage can be guaranteed
+              to be completely secure.
+            </p>
+
+            <h3>7. External Links</h3>
+            <p>
+              If this website links to an external website or service,
+              that service's own privacy policy and practices apply.
+            </p>
+
+            <h3>8. Contact</h3>
+            <p>
+              For privacy-related enquiries, email
+              <a href="mailto:zqnfoxbeprivatelimited@gmail.com">
+                zqnfoxbeprivatelimited@gmail.com
+              </a>.
+            </p>
+          </div>
+        </details>
+
+        <details id="terms">
+          <summary>Terms of Use</summary>
+          <div class="legal-content">
+            <p><strong>Last updated:</strong> 11 October 2026</p>
+
+            <h3>1. Acceptance</h3>
+            <p>
+              By accessing this website, you agree to use it lawfully
+              and in accordance with these terms. If you do not agree,
+              please discontinue use of the website.
+            </p>
+
+            <h3>2. Website Information</h3>
+            <p>
+              The website provides general information about
+              ZQNFOX BE PRIVATE LIMITED, its areas of interest and
+              its contact details. Content may be updated, changed
+              or removed without prior notice.
+            </p>
+
+            <h3>3. No Professional Advice</h3>
+            <p>
+              Website content is provided for general informational
+              purposes and is not legal, financial, investment or
+              other professional advice.
+            </p>
+
+            <h3>4. Intellectual Property</h3>
+            <p>
+              Unless otherwise stated, the website's original text,
+              branding and design are intended to belong to or be
+              used by the company subject to applicable rights.
+              You may not reproduce or commercially exploit protected
+              material without appropriate permission.
+            </p>
+
+            <h3>5. Acceptable Use</h3>
+            <p>
+              You must not use this website for unlawful purposes,
+              attempt to disrupt its operation, interfere with its
+              security or misuse its content.
+            </p>
+
+            <h3>6. External Services</h3>
+            <p>
+              Links or email functionality may lead to services
+              operated by third parties. The company does not control
+              every aspect of those services.
+            </p>
+
+            <h3>7. Availability and Liability</h3>
+            <p>
+              The website is provided on an availability basis.
+              To the extent permitted by applicable law, the company
+              does not guarantee uninterrupted access or that every
+              item of information will always be complete or current.
+              Nothing in these terms excludes liability where such
+              exclusion is prohibited by law.
+            </p>
+
+            <h3>8. Changes to These Terms</h3>
+            <p>
+              These terms may be revised as the website and the
+              company's activities evolve. The latest version will
+              be published on this page.
+            </p>
+
+            <h3>9. Contact</h3>
+            <p>
+              Questions about these terms may be sent to
+              <a href="mailto:zqnfoxbeprivatelimited@gmail.com">
+                zqnfoxbeprivatelimited@gmail.com
+              </a>.
+            </p>
+          </div>
+        </details>
+
+        <p class="legal-notice">
+          Note: These policy drafts are general website text, not a
+          substitute for legal review. Review them for your actual
+          data practices and applicable Indian legal requirements
+          before treating them as final company policies.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <strong>ZQNFOX BE PRIVATE LIMITED</strong>
-    <p>© 2026 ZQNFOX BE PRIVATE LIMITED. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo" href="#home">ZQN<span>FOX</span></a>
+          <p>
+            ZQNFOX BE PRIVATE LIMITED — exploring practical technology,
+            digital solutions and software innovation.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#about">About Us</a>
+          <a href="#focus">Our Focus</a>
+          <a href="#contact">Contact</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Use</a>
+        </nav>
+      </div>
+
+      <div class="footer-legal">
+        <p>
+          © <span id="year">2026</span>
+          <strong>ZQNFOX BE PRIVATE LIMITED.</strong>
+          All rights reserved.
+        </p>
+        <p class="cin">CIN: U62013UP2026PTC250723</p>
+      </div>
+
+      <p class="footer-address">
+        Registered Office: 11, 1 Bela, Ledwa, Maharajganj,
+        Belaharriya, Farenda, Maharajganj – 273157,
+        Uttar Pradesh, India.
+      </p>
+    </div>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
 </html>
